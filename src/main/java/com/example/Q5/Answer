@@ -1,0 +1,5 @@
+SELECT p.Name AS Name, s.Sport AS Sport, COALESE(SUM(s.Score), 0) AS Total_Score
+FROM scores s
+LEFT JOIN players p ON p.Player_no = s.Player_no
+GROUP BY s.Player_no, s.Sport
+ORDER BY s.Score;

@@ -1,0 +1,7 @@
+//Apply PreAuthorize annotations to the class
+//eg:
+
+@PreAuthorize("hasRole('ROLE_USER')")
+public class Demo {
+
+}
